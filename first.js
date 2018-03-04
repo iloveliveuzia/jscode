@@ -1,5 +1,13 @@
+function reverseStr(str) {
+    let newStr = '';
+    let i;
+    for (i = str.length - 1; i >= 0; i--) {
+        newStr += str.charAt(i);
+    }
+    return newStr;
+}
 function btodex(per){
-    let cand = String(per);
+    let cand = reverseStr(String(per));
     let b = 0;
     let step = 1;
     for (let i=0;i<cand.length;i++){
